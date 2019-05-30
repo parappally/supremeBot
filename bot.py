@@ -10,7 +10,7 @@ def order(keys):
 
     driver.find_element_by_xpath('')
     # going to need to be able to find at least 10 elements on the page
-    # use chrome developer tools incase headings on site change in the future
+    # use chrome developer tools incase headings on site change in the future.. use copy by xpath
     driver.find_element_by_xpath('')
     driver.find_element_by_xpath('')
     driver.find_element_by_xpath('')
