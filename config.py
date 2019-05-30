@@ -1,4 +1,5 @@
 personalKeys = {
+    "product_url" : "https://www.supremenewyork.com/shop/tops-sweaters/rkdjagw4r/nr9mdzfwv",
     "name" : "Josiah Parappally",
     "email" : "josiahparappally@gmail.com",
     "telephone" : "647-824-9936",
