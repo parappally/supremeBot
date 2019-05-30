@@ -1,6 +1,10 @@
 from selenium import webdriver
 import time
-import config.py
+from config import personalKeys
+
+def order(keys):
+
+    driver = webdriver.Chrome('chromedriver')
 
 if __name__ == '__main':
-    order()
+    order(personalKeys)
