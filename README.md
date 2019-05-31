@@ -10,6 +10,7 @@ You will need to hand solve the captcha.
 Install chrome driver, selenium, and python.
 
 To do:
+
 Break captcha at the end
 
 Speed up entire process in a different language (possibly C)
