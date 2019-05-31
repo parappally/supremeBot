@@ -138,8 +138,8 @@ def order(keys):
 
 
     driver.find_element_by_xpath('//*[@id="nnaerb"]').send_keys(keys["card_number"])
-    driver.find_element_by_xpath('//*[@id="credit_card_month"]/option[web_credit_card_month["June"]]').click() # credit card expiry month dropdown, change 9 to the whatever number month of the year you need
-    driver.find_element_by_xpath('//*[@id="credit_card_year"]/option[web_credit_card_year[2019]]').click() # credit card expiry year dropdown, 1 is 2019, 2 is 2020, 3 is 2023 etc.
+    driver.find_element_by_xpath('//*[@id="credit_card_month"]/option[web_credit_card_month["June"]]').click() # credit card expiry month dropdown, change month to corresponding month
+    driver.find_element_by_xpath('//*[@id="credit_card_year"]/option[web_credit_card_year[2019]]').click() # credit card expiry year dropdown, change year to corresponding year
     driver.find_element_by_xpath('//*[@id="orcer"]').send_keys(keys["cvv"])
 
 
