@@ -15,4 +15,4 @@ Break captcha at the end
 
 Speed up entire process in a different language (possibly C)
 
-Will increase the ease of use of the entire program for people new to coding by having variables for people to put information instead of using a dictionary
+Will increase the ease of use of program for people new to coding through using variables, not dictionaries. 
