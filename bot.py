@@ -19,7 +19,7 @@ def order(keys):
     # I don't have a unit number, so I skipped this step...
     driver.find_element_by_xpath('//*[@id="order_billing_zip"]').send_keys(keys["zip"])
     driver.find_element_by_xpath('//*[@id="order_billing_city"]').send_keys(keys["city"])
-    # driver.find_element_by_xpath('')
+    driver.find_element_by_xpath('//*[@id="nnaerb"]').send_keys(keys["card_number"])
     # driver.find_element_by_xpath('')
 
 if __name__ == '__main':
