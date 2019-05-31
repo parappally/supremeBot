@@ -85,19 +85,33 @@ web_states = {
     "WY" : 60,
 }
 
-web_credit_card-month {
-    "Jan" : 1,
-    "Feb" : 2,
-    "Mar" : 3,
-    "Apr" : 4,
+web_credit_card_month = {
+    "January" : 1,
+    "February" : 2,
+    "March" : 3,
+    "April" : 4,
     "May" : 5,
-    "Jun" : 6,
-    "Jul" : 7,
-    "Aug" : 8,
-    "Sep" : 9,
-    "Oct" : 10,
-    "Nov" : 11,
-    "Dec" : 12,
+    "June" : 6,
+    "July" : 7,
+    "August" : 8,
+    "September" : 9,
+    "October" : 10,
+    "November" : 11,
+    "December" : 12,
+}
+
+web_credit_card_year = {
+    2019 : 1,
+    2020 : 2,
+    2021 : 3,
+    2022 : 4,
+    2023 : 5,
+    2024 : 6,
+    2025 : 7,
+    2026 : 8,
+    2027 : 9,
+    2028 : 10,
+    2029 : 11,
 }
 
 def order(keys):
@@ -124,8 +138,8 @@ def order(keys):
 
 
     driver.find_element_by_xpath('//*[@id="nnaerb"]').send_keys(keys["card_number"])
-    driver.find_element_by_xpath('//*[@id="credit_card_month"]/option[9]').click() # credit card expiry month dropdown, change 9 to the whatever number month of the year you need
-    driver.find_element_by_xpath('//*[@id="credit_card_year"]/option[3]').click() # credit card expiry year dropdown, 1 is 2019, 2 is 2020, 3 is 2023 etc.
+    driver.find_element_by_xpath('//*[@id="credit_card_month"]/option[web_credit_card_month["June"]]').click() # credit card expiry month dropdown, change 9 to the whatever number month of the year you need
+    driver.find_element_by_xpath('//*[@id="credit_card_year"]/option[web_credit_card_year[2019]]').click() # credit card expiry year dropdown, 1 is 2019, 2 is 2020, 3 is 2023 etc.
     driver.find_element_by_xpath('//*[@id="orcer"]').send_keys(keys["cvv"])
 
 
