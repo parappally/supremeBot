@@ -23,6 +23,68 @@ web_provinces = {
     "YT" : 14,
 }
 
+web_states = {
+    "AL" : 2,
+    "AK" : 3,
+    "AS" : 4,
+    "AZ" : 5,
+    "AR" : 6,
+    "CA" : 7,
+    "CO" : 8,
+    "CT" : 9,
+    "DE" : 10,
+    "DC" : 11,
+    "FM" : 12,
+    "FL" : 13,
+    "GA" : 14,
+    "GU" : 15,
+    "HI" : 16,
+    "ID" : 17,
+    "IL" : 18,
+    "IN" : 19,
+    "IA" : 20,
+    "KS" : 21,
+    "KY" : 22,
+    "LA" : 23,
+    "ME" : 24,
+    "MH" : 25,
+    "MD" : 26,
+    "MA" : 27,
+    "MI" : 28,
+    "MN" : 29,
+    "MS" : 30,
+    "MO" : 31,
+    "MT" : 32,
+    "NE" : 33,
+    "NV" : 34,
+    "NH" : 35,
+    "NJ" : 36,
+    "NM" : 37,
+    "NY" : 38,
+    "NC" : 39,
+    "ND" : 40,
+    "MP" : 41,
+    "OH" : 42,
+    "OK" : 43,
+    "OR" : 44,
+    "PW" : 45,
+    "PA" : 46,
+    "PR" : 47,
+    "RI" : 48,
+    "SC" : 49,
+    "SD" : 50,
+    "TN" : 51,
+    "TX" : 52,
+    "UT" : 53,
+    "VT" : 54,
+    "VI" : 55,
+    "VA" : 56,
+    "WA" : 57,
+    "WV" : 58,
+    "WI" : 59,
+    "WY" : 60,
+}
+
 def order(keys):
 
     driver = webdriver.Chrome('./chromedriver')
@@ -42,6 +104,7 @@ def order(keys):
 
     driver.find_element_by_xpath('//*[@id="order_billing_country"]/option[web_countries["CA"]]').click() # country dropdown
     driver.find_element_by_xpath('//*[@id="order_billing_state"]/option[web_provinces["ON"]]').click() # province dropdown
+    # driver.find_element_by_xpath('//*[@id="order_billing_state"]/option[web_states["AS"]]').click() # state dropdown UNCOMMENT THIS AND COMMENT OUT PROVINCE IF YOU LIVE IN USA
     driver.find_element_by_xpath('//*[@id="order_billing_city"]').send_keys(keys["city"])
 
 
