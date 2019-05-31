@@ -5,7 +5,6 @@ personalKeys = {
     "telephone" : "647-824-9936",
     "address" : "1845 Willow Way",
     "zip" : "L5M 4Y5",
-    "city" : "Mississauga"
-    ""
-
+    "city" : "Mississauga",
+    "telephone" : 6478249936
 }
