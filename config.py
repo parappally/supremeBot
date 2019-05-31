@@ -7,5 +7,6 @@ personalKeys = {
     "zip" : "L5M 4Y5",
     "city" : "Mississauga",
     "telephone" : 6478249936,
-    "card_number" : 
+    "card_number" : 5555555555554444, #type : random mastercard from google
+    "cvv" : 543
 }
