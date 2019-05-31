@@ -122,7 +122,7 @@ def order(keys):
 
     # use chrome developer tools incase headings on site change in the future.. use copy by xpath
     driver.find_element_by_xpath('//*[@id="add-remove-buttons"]/input').click()
-    time.sleep(1)
+    time.sleep(1) # going to test if this can be lowered
     driver.find_element_by_xpath('//*[@id="cart"]/a[2]').click()
     driver.find_element_by_xpath('//*[@id="order_billing_name"]').send_keys(keys["name"]) #name in checkout
     driver.find_element_by_xpath('//*[@id="order_email"]').send_keys(keys["email"] #email in checkout
