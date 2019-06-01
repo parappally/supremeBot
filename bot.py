@@ -145,8 +145,8 @@ def order():
 
 
     driver.find_element_by_xpath('//*[@id="nnaerb"]').send_keys(personalKeys["card_number"])
-    driver.find_element_by_xpath('//*[@id="credit_card_month"]/option[6]').click() # credit card expiry month dropdown, change month to corresponding month
-    driver.find_element_by_xpath('//*[@id="credit_card_year"]/option[1]').click() # credit card expiry year dropdown, change year to corresponding year
+    driver.find_element_by_xpath('//*[@id="credit_card_month"]/option[6]').click() # credit card expiry month dropdown, look at web_credit_card_month for number to replace 2 with
+    driver.find_element_by_xpath('//*[@id="credit_card_year"]/option[1]').click() # credit card expiry year dropdown, look at web_credit_card_year for number to replace 1 with
     driver.find_element_by_xpath('//*[@id="orcer"]').send_keys(personalKeys["cvv"])
     driver.find_element_by_xpath('//*[@id="cart-cc"]/fieldset/p[2]/label/div/ins').click()
 
