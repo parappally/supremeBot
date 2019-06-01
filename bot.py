@@ -177,9 +177,16 @@ def order():
 
     driver.find_element_by_xpath('//*[@id="bo"]').send_keys(personalKeys['address'])
     driver.find_element_by_xpath('//*[@id="order_billing_zip"]').send_keys(personalKeys['zip'])
-    driver.find_element_by_xpath('//*[@id="order_billing_city"]').send_keys(keys['city'])
-    driver.find_element_by_xpath('//*[@id="orcer"]').send_keys(keys['card_cvv'])
-    driver.find_element_by_id('nnaerb').send_keys(keys['card_number'])
+    driver.find_element_by_xpath('//*[@id="order_billing_city"]').send_keys(personalKeys['city'])
+    driver.find_element_by_xpath('//*[@id="order_billing_country"]/option[web_countries["CA"]]').click() # country dropdown
+    # driver.find_element_by_xpath('//*[@id="order_billing_state"]/option[web_states["AS"]]').click() # state dropdown UNCOMMENT THIS AND COMMENT OUT PROVINCE IF YOU LIVE IN USA
+    driver.find_element_by_xpath('//*[@id="order_billing_state"]/option[web_provinces["ON"]]').click() # province dropdown UNCOMMENT THIS AND COMMENT OUT STATE IF YOU LIVE IN CANADA
+
+
+    driver.find_element_by_xpath('//*[@id="nnaerb"]').send_keys(personalKeys["card_number"])
+    driver.find_element_by_xpath('//*[@id="credit_card_month"]/option[web_credit_card_month["June"]]').click() # credit card expiry month dropdown, change month to corresponding month
+    driver.find_element_by_xpath('//*[@id="credit_card_year"]/option[web_credit_card_year[2019]]').click() # credit card expiry year dropdown, change year to corresponding year
+    driver.find_element_by_xpath('//*[@id="orcer"]').send_keys(personalKeys["cvv"])
 
 
     process_payment = driver.find_element_by_xpath('//*[@id="pay"]/input')
