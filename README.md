@@ -30,4 +30,4 @@ Speed up entire process in a different language (possibly C)
 
 Will increase the ease of use of program for people new to coding through using variables, not dictionaries. 
 
-If you have any questions/concersn with the program, please email me at: josiahparappally@gmaill.com
+If you have any questions/concersn with the program, please email me at: josiahparappally@gmail.com
