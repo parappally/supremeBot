@@ -1,5 +1,5 @@
 personalKeys = {
-    "product_url" : "https://www.supremenewyork.com/shop/tops-sweaters/rkdjagw4r/nr9mdzfwv", # insert specific product url here
+    "product_url" : "https://www.supremenewyork.com/shop/pants/gmgf3d097/z1dwc437u", # insert specific product url here
     "name" : "Josiah Parappally",
     "email" : "josiahparappally@*****.com",
     "telephone" : 9999999999, # needs to be a nat, not a string (no hyphens)
