@@ -129,10 +129,8 @@ def order():
     driver.find_element_by_name('commit').click()
 
     time.sleep(.5)
-    checkout_element = driver.find_element_by_class_name('checkout')
-    checkout_element.click()
+    driver.find_element_by_class_name('checkout').click()
 
-    # fill out checkout screen fields
     driver.find_element_by_xpath('//*[@id="order_billing_name"]').send_keys(personalKeys['name'])
     driver.find_element_by_xpath('//*[@id="order_email"]').send_keys(personalKeys['email'])
     driver.find_element_by_xpath('//*[@id="order_tel"]').send_keys(personalKeys['telephone'])
