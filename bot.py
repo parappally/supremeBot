@@ -139,9 +139,9 @@ def order():
     driver.find_element_by_xpath('//*[@id="bo"]').send_keys(personalKeys['address'])
     driver.find_element_by_xpath('//*[@id="order_billing_zip"]').send_keys(personalKeys['zip'])
     driver.find_element_by_xpath('//*[@id="order_billing_city"]').send_keys(personalKeys['city'])
-    driver.find_element_by_xpath('//*[@id="order_billing_country"]/option[2]').click() # country dropdown
-    # driver.find_element_by_xpath('//*[@id="order_billing_state"]/option[web_states["AS"]]').click() # state dropdown UNCOMMENT THIS AND COMMENT OUT PROVINCE IF YOU LIVE IN USA
-    driver.find_element_by_xpath('//*[@id="order_billing_state"]/option[10]').click() # province dropdown UNCOMMENT THIS AND COMMENT OUT STATE IF YOU LIVE IN CANADA
+    driver.find_element_by_xpath('//*[@id="order_billing_country"]/option[2]').click() # country dropdown, look at web_countries for number to replace 2 with
+    # driver.find_element_by_xpath('//*[@id="order_billing_state"]/option[web_states["AS"]]').click() # state dropdown, uncomment and comment out province dropdown if you live in USA
+    driver.find_element_by_xpath('//*[@id="order_billing_state"]/option[10]').click() # province dropdown, uncomment and comment out state dropdown if you live in CA
 
 
     driver.find_element_by_xpath('//*[@id="nnaerb"]').send_keys(personalKeys["card_number"])
