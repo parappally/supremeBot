@@ -128,7 +128,7 @@ def order():
     driver.find_element_by_xpath('//*[@id="oba3"]').send_keys(personalKeys['telephone'])
 
     driver.find_element_by_xpath('//*[@id="bo"]').send_keys(personalKeys['address'])
-    driver.find_element_by_xpath('//*[@id="oba3"]').send_keys(personalKeys['apt'])
+    # driver.find_element_by_xpath('//*[@id="oba3"]').send_keys(personalKeys['apt']) #uncomment this line if you live in an apartment or have a unit number
     driver.find_element_by_xpath('//*[@id="order_billing_zip"]').send_keys(personalKeys['zip'])
     driver.find_element_by_xpath('//*[@id="order_billing_city"]').send_keys(personalKeys['city'])
     driver.find_element_by_xpath('//*[@id="order_billing_country"]/option[2]').click() # country dropdown, look at web_countries for number to replace 2 with
