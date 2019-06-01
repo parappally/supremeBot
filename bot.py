@@ -114,16 +114,6 @@ web_credit_card_year = {
     2029 : 11,
 }
 
-def timeme(method):
-    def wrapper(*args, **kw):
-        startTime = int(round(time.time() * 1000))
-        result = method(*args, **kw)
-        endTime = int(round(time.time() * 1000))
-        print((endTime - startTime)/1000, 's')
-        return result
-    return wrapper
-
-@timeme
 def order():
     # add to cart
     driver.find_element_by_name('commit').click()
