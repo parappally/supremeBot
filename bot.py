@@ -1,11 +1,6 @@
 from selenium import webdriver
 import time
 from config import personalKeys
-from config import web_countries
-from config import web_provinces
-from config import web_states
-from config import web_credit_card_month
-from config import web_credit_card_year
 
 web_countries = {
     "USA" : 1,
@@ -118,6 +113,7 @@ web_credit_card_year = {
     2028 : 10,
     2029 : 11,
 }
+
 
 def order():
     # add to cart
